@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.authors = { 'James Valaitis' => 'jamesvalaitis@gmail.com' }
   spec.social_media_url = "http://twitter.com/infinityjames"
 
-  spec.platform = :ios, "9.2"
+  spec.platform = :ios, "9.1"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/infinity-james/RGB.git", tag:
   "v#{spec.version}", submodules: true }
