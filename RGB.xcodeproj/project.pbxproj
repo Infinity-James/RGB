@@ -10,7 +10,9 @@
 		1A20D22D1C6F3FE0005BC233 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A20D22B1C6F3FE0005BC233 /* Nimble.framework */; };
 		1A20D22E1C6F3FE0005BC233 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A20D22C1C6F3FE0005BC233 /* Quick.framework */; };
 		1A5DF5481C6D213500C4AA30 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5DF5471C6D213500C4AA30 /* Curry.framework */; };
-		1A5DF54E1C6D218600C4AA30 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5DF54A1C6D218600C4AA30 /* RGB.h */; };
+		1A5DF54E1C6D218600C4AA30 /* RGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5DF54A1C6D218600C4AA30 /* RGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A8CDB2C1C734B590050751C /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8CDB2B1C734B590050751C /* RGBTests.swift */; };
+		1A9775D71C7389F5002E5132 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9775D61C7389F5002E5132 /* RGBUIColor.swift */; };
 		1AECD4B91C6CD824006B17BA /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AECD4AE1C6CD824006B17BA /* RGB.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,9 @@
 		1A5DF5471C6D213500C4AA30 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		1A5DF54A1C6D218600C4AA30 /* RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGB.h; sourceTree = "<group>"; };
 		1A5DF54D1C6D218600C4AA30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8CDB2B1C734B590050751C /* RGBTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBTests.swift; sourceTree = "<group>"; };
+		1A8CDB2D1C734D6B0050751C /* RGBTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RGBTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A9775D61C7389F5002E5132 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 		1AECD4AE1C6CD824006B17BA /* RGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECD4B81C6CD824006B17BA /* RGBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECD4D91C6CDBEE006B17BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		1A5DF54B1C6D218600C4AA30 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1A9775D61C7389F5002E5132 /* RGBUIColor.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -90,6 +96,14 @@
 				1A5DF54D1C6D218600C4AA30 /* Info.plist */,
 			);
 			path = "Supporting-Files";
+			sourceTree = "<group>";
+		};
+		1A8CDB291C734B320050751C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A8CDB2B1C734B590050751C /* RGBTests.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		1AECD4A41C6CD824006B17BA = {
@@ -114,6 +128,7 @@
 		1AECD4D71C6CDBEE006B17BA /* RGBTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A8CDB291C734B320050751C /* Source */,
 				1AECD4D81C6CDBEE006B17BA /* Supporting-Files */,
 			);
 			path = RGBTests;
@@ -122,6 +137,7 @@
 		1AECD4D81C6CDBEE006B17BA /* Supporting-Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A8CDB2D1C734D6B0050751C /* RGBTests-Bridging-Header.h */,
 				1AECD4D91C6CDBEE006B17BA /* Info.plist */,
 			);
 			path = "Supporting-Files";
@@ -235,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9775D71C7389F5002E5132 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8CDB2C1C734B590050751C /* RGBTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +368,13 @@
 		1AECD4C31C6CD824006B17BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				INFOPLIST_FILE = "$(SRCROOT)/RGB/Supporting-Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -361,16 +382,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1AECD4C41C6CD824006B17BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				INFOPLIST_FILE = "$(SRCROOT)/RGB/Supporting-Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -384,22 +409,27 @@
 		1AECD4C61C6CD824006B17BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				INFOPLIST_FILE = "RGBTests/Supporting-Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.RGBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RGBTests/Supporting-Files/RGBTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1AECD4C71C6CD824006B17BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				INFOPLIST_FILE = "RGBTests/Supporting-Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.RGBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RGBTests/Supporting-Files/RGBTests-Bridging-Header.h";
 			};
 			name = Release;
 		};

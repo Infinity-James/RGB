@@ -6,7 +6,7 @@
 //  Copyright © 2016 &Beyond. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for RGB.
 FOUNDATION_EXPORT double RGBVersionNumber;
